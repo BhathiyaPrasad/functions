@@ -19,12 +19,6 @@ exports.order = functions.https.onRequest((request, response) => {
 exports.customer = functions.https.onRequest((request, response) => {
   const number1 = 12;
   const number2 = 15;
-  response.send(number1 + number2);
+  const result = number1 + number2;
+  response.send(result.toString());
 });
-
-exports.orderCoffee = functions.https.onRequest((request,response) => {
-    const orderCoffee = document.querySelector('.heading')
-    orderCoffee.addEventListener('click',() => {
-        orderCoffee.classList.add('open');
-    })
-})
