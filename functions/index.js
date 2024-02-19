@@ -24,3 +24,7 @@ exports.customer = functions.https.onRequest((request, response) => {
   response.send(result.toString());
 });
 
+exports.customer = functions.https.onRequest((request, response) => {
+  const button =document.querySelector('.call')
+});
+

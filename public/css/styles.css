@@ -103,10 +103,3 @@ body{
     font-family: inherit;
     cursor: pointer;
   }
-
-  .heading{
-    display: none;
-  }
-  .heading.open{
-    display: block;
-  }
